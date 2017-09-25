@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<title></title>
+		<style type="text/css">
+			body{
+				color: #FFFFFF;
+			}
+			.title {
+				width: 100%;
+			}
+			.title img {
+				width: 100%;
+			}
+			.con{
+				background: #1fa8cc;
+			}
+			.questions{
+				font-size: 25px;
+				
+			}
+			.questions li{
+				border: 1px solid transparent;
+				list-style-position:inside;
+				height: 60px;
+				line-height: 60px;
+
+				border-image: url(img/biankuang.png) 1 2 1 2 repeat;
+				
+			}
+			.province{
+				/*display: inline-block;*/
+				
+			}
+			.city{
+				padding-left: 80px;
+			}
+		 em{
+			display: inline-block;
+				font-style: normal;
+				width: 130px;
+
+				text-decoration: underline;
+			}
+			.conts{
+				font-size: 20px;
+				padding:60px 10px 40px 10px;
+			}
+			.conts img{
+				width: 20px;
+			}
+			input[type="radio"]{
+				opacity:0;
+				
+			}
+			.radios{
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				width: 20px;
+				height: 20px;
+				background: url(img/radio.png) center no-repeat;
+				background-size: 100%;
+				/*position: ;*/
+			}
+			.male,.female{
+				display: inline-block
+				width: 200px;
+				position: relative;
+			}
+			.female{
+				margin-left: 100px;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+
+		<div class="title ">
+						<img src="img/001.png" />
+				
+		</div>
+		<div class="con">
+			<div class="container">
+				<div class="row">
+					<div class="questions">
+						<ol class="col-lg-10 col-lg-offset-1 col-sm-12">
+							<li>
+								<span >您所在的省：</span>
+							</li>
+							<div class="conts">
+								
+								<span class="province">省：<em>111111111</em><img src="img/down.png"/></span>
+								<span class="city">市：<em>222222222</em><img src="img/down.png"/></span>
+							</div>
+							<li>
+								<span >您的性别：</span>
+							</li>
+							<div class="conts">
+								
+								<span class="male">
+									<label for="">男</label>
+									<input type="radio" />
+									<span class="radios"></span>
+								</span>
+								<span class="female">
+									<label for="">女</label>
+									<input type="radio" />
+									<span class="radios"></span>
+									
+								</span>
+							</div>
+							<li>
+								<span >您的性别：</span>
+							</li>
+							<div class="conts">
+								
+								<span class="male">
+									<label for="">男</label>
+									<input type="radio" />
+									<span class="radios"></span>
+								</span>
+								<span class="female">
+									<label for="">女</label>
+									<input type="radio" />
+									<span class="radios"></span>
+									
+								</span>
+							</div>
+						
+			
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

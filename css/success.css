@@ -1,0 +1,36 @@
+		body {
+			background: #1fa7cc;
+			color: #FFFFFF;
+			/*font-size: 2vw;*/
+		}
+		a:link{text-decoration: none; color: #F2F2F2;}
+		a:visited{text-decoration: none;color: #DFF0D8;}
+		a:active{text-decoration: none;color: #DFF0D8;}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		
+		.title {
+			padding-top: 30px;
+			text-align: center;
+		}
+		
+		.title2 {
+			margin-top: 20px;
+		}
+		
+		.codes {
+			width: 100%;
+			margin-top: 20px;
+			text-align: center;
+		}
+		
+		.codes img {
+			width: 150px;
+		}

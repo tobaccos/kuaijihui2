@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name=”renderer” content=”webkit”>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
+		<link rel="stylesheet" type="text/css" href="css/core.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/paper.css" />
+		<title>问卷</title>
+
+	</head>
+
+	<body>
+
+		<!--<div class="title ">
+			<img src="img/001.png" />
+		</div>-->
+		<div class="con">
+			<div class="row ">
+				<div class=" common lg-10 md-10 sm-10 xs-10">
+					<p class="tit">1、您在哪个省市：</p>
+					<ul class="position">
+						<li class="col lg-5 md-5 sm-5 xs-5">
+							<span class="col lg-2 md-2 sm-2 xs-3" style="text-align:right;">省：</span>
+							<span class="col lg-4 md-4 sm-5 xs-6"><input id="province" type="text" value="" /></span>
+							<i class="province_icon iconfont icon-icon-down lg-1 md-1 sm-1 xs-1"></i>
+									<input class="level" type="hidden" value=""/>
+							
+								<ul class="province">
+									<li></li>
+								</ul>
+						</li>
+						<li class="col lg-6 md-6 sm-6 xs-6">
+							<span class="col lg-2 md-2 sm-5 xs-5" style="text-align:right;">市区：</span>
+							<span class="col lg-4 md-4 sm-5 xs-6"><input id="city" type="text" value="" /></span>
+							<i class="city_icon iconfont icon-icon-down lg-1 md-1 sm-1 xs-1"></i>
+							<ul class="city">
+								<li></li>
+							</ul>
+						</li>
+						<li class="col lg-5 md-5 sm-5 xs-5"></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row gender">
+				<div class=" common lg-10 md-10 sm-10 xs-10">
+					<p class="tit">2、请问您的性别：</p>
+
+					<ul class="radios">
+						<li class="col lg-2 md-2 sm-2 xs-5"><label for="male">男</label><i id="male" data-value="1" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-2 md-2 sm-2 xs-5"><label for="female">女</label><i id="female" data-value="2" class="iconfont radio icon-radio"></i></li>
+					</ul>
+
+				</div>
+			</div>
+
+			<div class="row certificate">
+				<div class=" common lg-10 md-10 sm-10 xs-10">
+					<p class="tit">3、您持有的会计证：</p>
+
+					<ul class="radios">
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>无证</span><i data-value="1" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>会计从业资格证</span><i data-value="2" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>初级会计证</span><i data-value="3" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>中级会计证</span><i data-value="4" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>高级会计证</span><i data-value="5" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>CPA</span><i data-value="6" class="iconfont radio icon-radio"></i></li>
+
+					</ul>
+
+				</div>
+			</div>
+			<div class="row positions">
+				<div class=" common lg-10 md-10 sm-10 xs-10">
+					<p class="tit">4、请问您的职位：</p>
+
+					<ul class="radios">
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>职员</span><i data-value="1" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>主管</span><i data-value="2" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>经理</span><i data-value="3" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>总监及以上</span><i data-value="4" class="iconfont radio icon-radio"></i></li>
+
+					</ul>
+
+				</div>
+			</div>
+			<div class="row working_life">
+				<div class=" common lg-10 md-10 sm-10 xs-10">
+					<p class="tit">5、请问您的工作年限：</p>
+
+					<ul class="radios">
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>一年以下</span><i data-value="1" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>1-3年</span><i data-value="2" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>3-5年</span><i data-value="3" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>5-10年</span><i data-value="4" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>10-15年</span><i data-value="5" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>15年以上</span><i data-value="6" class="iconfont radio icon-radio"></i></li>
+
+					</ul>
+
+				</div>
+			</div>
+
+			<div class="row sallary">
+				<div class=" common lg-10 md-10 sm-10 xs-10">
+					<p class="tit">6、请问您的月薪：</p>
+
+					<ul class="radios">
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>2000以下</span><i data-value="1999" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>2000+</span><i data-value="2000" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>3000+</span><i data-value="3000" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>4000+</span><i data-value="4000" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>5000+</span><i data-value="5000" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>6000+</span><i data-value="6000" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>7000+</span><i data-value="7000" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>8000+</span><i data-value="8000" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>9000+</span><i data-value="9000" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>10000+</span><i data-value="10000" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>20000+</span><i data-value="20000" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>30000+</span><i data-value="30000" class="iconfont radio icon-radio"></i></li>
+
+					</ul>
+
+				</div>
+			</div>
+
+			<div class="row desire">
+				<div class=" common lg-10 md-10 sm-10 xs-10">
+					<p class="tit">7、请问您有没有主动参加会计继续教育的意愿：</p>
+
+					<ul class="radios">
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>有</span><i data-value="1" class="iconfont radio icon-radio"></i></li>
+						<li class="col lg-3 md-3 sm-4 xs-6"><span>没有</span><i data-value="2" class="iconfont radio icon-radio"></i></li>
+
+					</ul>
+
+				</div>
+			</div>
+
+			<div class="row  cellphone">
+				<div class=" common lg-10 md-10 sm-10 xs-10">
+					<span class="col lg-5 md-5 sm-5 xs-12">
+						<span class=" col lg-4 md-4 sm-4 xs-4" style="text-align:right;">手机号：</span>
+						<span class="col lg-8 md-8 sm-8 xs-8">
+							
+						<input class="phone " type="text" name="phone" value="" />
+						</span>
+					</span>
+					<span class="codes col lg-5 md-5 sm-5 xs-12">
+						<span class="col lg-3 md-3 sm-4 xs-4" style="text-align:right;">验证码：</span>
+						<span class="col lg-9 md-9 sm-8 xs-8">
+							
+					<input class="code " type="text" name="code" value="" />
+					<i class="btn">发送验证码</i>
+					</span>
+					</span>
+
+				</div>
+			</div>
+			<div class="row submits">
+				<div class=" common lg-10 md-10 sm-10 xs-10">
+					<div class="sub ">
+						提交
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/layer/layer.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/ paper.js" type="text/javascript" charset="utf-8"></script>
+
+</html>
